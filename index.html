@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLEANING MOP 4000 | We Solved Mopping.</title>
+  <meta name="description" content="After 47 years of research, we present the definitive floor cleaning instrument. Featuring Zero-Drift Handle Technology and the Adaptive Mop Matrix.">
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- SEO & Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23FFAA00'%3E%3Cpath d='M19 6V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v1H3v3h18V6h-2zm-2 0H7V5h10v1zM5 11v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-8H5zm5 7H8v-4h2v4zm4 0h-2v-4h2v4z'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- FIXED NAVIGATION HEADER -->
+  <header>
+    <a href="#" class="logo" id="logo-nav">
+      MOP 4000 <span>ISO 9001</span>
+    </a>
+    <nav class="nav-menu">
+      <a href="#features" id="nav-features">Specs</a>
+      <a href="#simulator" id="nav-simulator">Destiny Simulator</a>
+      <a href="#variants" id="nav-variants">Instruments</a>
+      <a href="#order" id="nav-order">Procure</a>
+    </nav>
+    <button class="nav-cta" id="nav-cta-btn" onclick="scrollToOrder()">Acquire</button>
+  </header>
+
+  <!-- SECTION 1 — HERO -->
+  <section class="hero-section" id="hero">
+    <div class="hero-godray"></div>
+    <div class="hero-content">
+      <span class="badge-certified" id="badge-iso">★ ISO 9001 FLOOR CERTIFIED ★</span>
+      <h1 class="hero-title font-serif">CLEANING MOP 4000</h1>
+      <p class="hero-subtitle font-serif">"We Solved Mopping."</p>
+
+      <!-- Clean Mop SVG Illustration Dead Center -->
+      <div class="hero-illustration-container">
+        <svg class="hero-mop-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Outer circular ambient ring -->
+          <circle cx="100" cy="100" r="85" stroke="#1E3A5F" stroke-width="1" stroke-dasharray="4 4" />
+          
+          <!-- God-ray/glowing circle behind mop head -->
+          <circle cx="100" cy="140" r="30" fill="rgba(255, 170, 0, 0.08)" />
+
+          <!-- Mop Handle (Steel-Blue / Deep Navy / Mid-Navy details) -->
+          <rect x="97" y="15" width="6" height="110" rx="3" fill="#2D5F8F" />
+          <rect x="96" y="30" width="8" height="15" fill="#1E3A5F" /> <!-- Upper handle grip -->
+          <circle cx="100" cy="15" r="5" fill="#FFAA00" /> <!-- Top accent cap -->
+          
+          <!-- Joint & Screw threads (Technical accents) -->
+          <rect x="94" y="118" width="12" height="12" rx="1" fill="#FFAA00" />
+          <circle cx="100" cy="124" r="2.5" fill="#0A1628" />
+          
+          <!-- Mop Matrix Base Plate -->
+          <path d="M60 130 H140 V138 H60 Z" fill="#1E3A5F" />
+          <rect x="65" y="132" width="70" height="2" fill="#FFAA00" />
+          
+          <!-- Mop Fibers (Brushed Cream Array) -->
+          <g stroke="#FFFFF0" stroke-width="2.5" stroke-linecap="round" opacity="0.95">
+            <!-- Structured symmetrical hanging fibers -->
+            <path d="M63 138 C 63 155, 60 175, 58 185" />
+            <path d="M70 138 C 70 158, 68 178, 66 186" />
+            <path d="M77 138 C 77 160, 76 179, 75 188" />
+            <path d="M84 138 C 84 161, 84 180, 84 189" />
+            <path d="M91 138 C 91 162, 92 181, 93 190" />
+            
+            <path d="M100 138 C 100 163, 100 182, 100 191" fill="none" stroke="#FFAA00" stroke-width="3" /> <!-- Center accent strand -->
+            
+            <path d="M109 138 C 109 162, 108 181, 107 190" />
+            <path d="M116 138 C 116 161, 116 180, 116 189" />
+            <path d="M123 138 C 123 160, 124 179, 125 188" />
+            <path d="M130 138 C 130 158, 132 178, 134 186" />
+            <path d="M137 138 C 137 155, 140 175, 142 185" />
+          </g>
+
+          <!-- Water Absorption Droplets (Subtle amber SVGs) -->
+          <circle cx="50" cy="155" r="1.5" fill="#FFAA00" />
+          <circle cx="150" cy="165" r="1.5" fill="#FFAA00" />
+          <circle cx="100" cy="100" r="1" fill="#FFAA00" opacity="0.5" />
+        </svg>
+      </div>
+
+      <p class="hero-description" id="hero-desc">
+        After 47 years of research, 3 government grants, and one international incident, we present the definitive floor cleaning instrument.
+      </p>
+      
+      <a href="#order" class="btn-primary" id="acquire-cta">Acquire Yours</a>
+    </div>
+  </section>
+
+  <!-- SECTION 2 — PRODUCT FEATURES -->
+  <section class="features-section" id="features">
+    <span class="section-label text-amber" id="label-specs">Technical Specifications</span>
+    
+    <div class="features-grid">
+      <!-- Card 1 -->
+      <div class="feature-card" id="card-matrix">
+        <div class="feature-icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <path d="M9 3v18M15 3v18M3 9h18M3 15h18" />
+          </svg>
+        </div>
+        <h3 class="feature-title" id="title-matrix">ADAPTIVE MOP MATRIX™</h3>
+        <p class="feature-description" id="desc-matrix">
+          Self-adjusting fiber density responds to floor anxiety in real time.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="feature-card" id="card-drift">
+        <div class="feature-icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="2" x2="12" y2="22" />
+            <polyline points="5 9 12 2 19 9" />
+            <polyline points="5 15 12 22 19 15" />
+          </svg>
+        </div>
+        <h3 class="feature-title" id="title-drift">ZERO-DRIFT HANDLE TECHNOLOGY</h3>
+        <p class="feature-description" id="desc-drift">
+          Engineered to remain perpendicular to the floor at all times. Always.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="feature-card" id="card-absorb">
+        <div class="feature-icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+          </svg>
+        </div>
+        <h3 class="feature-title" id="title-absorb">INDUSTRIAL GRADE ABSORBENCY</h3>
+        <p class="feature-description" id="desc-absorb">
+          Each fiber capable of absorbing up to 400x its weight in unspecified liquid.
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="feature-card" id="card-quantum">
+        <div class="feature-icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 14h16M4 14l4-4M4 14l4 4M20 14l-4-4M20 14l-4 4M12 4v6" />
+          </svg>
+        </div>
+        <h3 class="feature-title" id="title-quantum">QUANTUM WIDTH ADJUSTMENT</h3>
+        <p class="feature-description" id="desc-quantum">
+          25cm or 10 meters. The floor does not negotiate.
+        </p>
+      </div>
+    </div>
+
+    <!-- Bottom Fake Badges -->
+    <div class="badges-container" id="fake-badges-row">
+      <span class="badge-outline">Floor Safety Board Approved</span>
+      <span class="badge-outline">Certified Mop Council™</span>
+      <span class="badge-outline">NASA Adjacent</span>
+      <span class="badge-outline">Indonesian Floor Authority</span>
+    </div>
+  </section>
+
+  <!-- SECTION 3 — AREA SIMULATOR -->
+  <section class="simulator-section" id="simulator">
+    <span class="section-label" style="color: var(--color-deep-navy); text-align: center;" id="label-sim">Calculate Your Floor's Destiny</span>
+    
+    <div class="simulator-layout">
+      <!-- Left Controls Panel -->
+      <div class="sim-controls-panel" id="sim-controls">
+        <!-- 1. Slider Floor Area -->
+        <div class="slider-container">
+          <div class="slider-header">
+            <label class="sim-label" for="floor-area-slider">Floor Area</label>
+            <span class="slider-val" id="floor-area-display">150 m²</span>
+          </div>
+          <input type="range" id="floor-area-slider" class="range-input" min="1" max="10000" value="150" step="1">
+          <small class="form-note" style="color: var(--color-gray-dark); margin-top: 4px;">Dynamic orthographic grid adjusts density live.</small>
+        </div>
+
+        <!-- 2. Dropdown Mess Type -->
+        <div class="dropdown-container">
+          <label class="sim-label" for="mess-type-select">Liquid Threat Vector</label>
+          <select id="mess-type-select">
+            <option value="indomie">Spilled Indomie</option>
+            <option value="mystery">Mystery Liquid</option>
+            <option value="rice">Rice Incident</option>
+            <option value="unspecified">Unspecified Event</option>
+            <option value="everything">Everything (Hazardous)</option>
+          </select>
+        </div>
+
+        <!-- 3. Mode Toggle Group -->
+        <div class="mode-toggle-group">
+          <label class="sim-label">Cleansing Instrument</label>
+          
+          <button class="btn-mode-toggle active" data-mode="traditional" id="mode-traditional">
+            Traditional Mop
+          </button>
+          
+          <button class="btn-mode-toggle" data-mode="cart" id="mode-cart">
+            Mall Scrubber Cart
+          </button>
+          
+          <button class="btn-mode-toggle" data-mode="mop4000" id="mode-mop4000">
+            CLEANING MOP 4000
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Live Viewport -->
+      <div class="sim-viewport-panel" id="sim-viewport">
+        <div class="sim-display-frame" id="sim-frame">
+          <!-- Sweep SVGs Overlay (Animate absolute position via JS & CSS Keyframes) -->
+          <!-- Traditional Mop Head SVG -->
+          <svg class="sweeper-mop-head" id="sweeper-traditional" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="15" y="10" width="30" height="8" rx="1" fill="#7A4F30" />
+            <rect x="27" y="2" width="6" height="25" fill="#CCCCCC" />
+            <path d="M12 18 C 12 35, 48 35, 48 18" stroke="#DDDDDD" stroke-width="4" fill="none" />
+          </svg>
+
+          <!-- Mall Scrubber Cart SVG -->
+          <svg class="sweeper-mop-head" id="sweeper-cart" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="15" y="10" width="70" height="40" rx="3" fill="#D2A31B" stroke="#000000" stroke-width="2" />
+            <rect x="25" y="50" width="50" height="15" fill="#444444" />
+            <circle cx="30" cy="65" r="10" fill="#222222" stroke="#FFFFFF" stroke-width="2" />
+            <circle cx="70" cy="65" r="10" fill="#222222" stroke="#FFFFFF" stroke-width="2" />
+            <rect x="75" y="20" width="18" height="12" fill="#000000" />
+            <circle cx="85" cy="26" r="3" fill="#FFAA00" />
+          </svg>
+
+          <!-- CLEANING MOP 4000 SVG (MASSIVE STOIC SWEEP) -->
+          <svg class="sweeper-mop-head" id="sweeper-mop4000" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Heavy hardware brackets -->
+            <rect x="90" y="2" width="20" height="13" fill="#FFAA00" />
+            <rect x="97" y="0" width="6" height="5" fill="#0A1628" />
+            <!-- Massive flat base plate -->
+            <rect x="5" y="15" width="190" height="12" rx="1" fill="#1E3A5F" stroke="#FFAA00" stroke-width="1" />
+            <!-- Flat full premium solid wiping block (Not a fork!) -->
+            <rect x="8" y="27" width="184" height="28" rx="2" fill="#FFFFF0" opacity="0.95" stroke="#FFAA00" stroke-width="1.5" />
+            <line x1="8" y1="41" x2="192" y2="41" stroke="#FFAA00" stroke-width="1" stroke-dasharray="4 4" />
+          </svg>
+
+          <!-- Interactive Grid (Populated dynamically) -->
+          <div class="sim-grid-container" id="interactive-grid"></div>
+        </div>
+
+        <!-- Playback Controls Panel -->
+        <div class="playback-controls-panel" id="playback-controls">
+          <!-- Slower multiplier button group on left -->
+          <div class="speed-group slower-group">
+            <span class="speed-label">Slow-Mo</span>
+            <div class="btn-group">
+              <button class="btn-speed" data-dir="slower" data-mult="120">x1/120</button>
+              <button class="btn-speed" data-dir="slower" data-mult="60">x1/60</button>
+              <button class="btn-speed" data-dir="slower" data-mult="10">x1/10</button>
+              <button class="btn-speed" data-dir="slower" data-mult="5">x1/5</button>
+              <button class="btn-speed" data-dir="slower" data-mult="2">x1/2</button>
+            </div>
+          </div>
+
+          <!-- Play / Pause in the center -->
+          <button class="btn-play-pause" id="play-pause-btn" type="button">
+            <!-- Play Icon -->
+            <svg class="icon-play" id="icon-play" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+            <!-- Pause Icon -->
+            <svg class="icon-pause" id="icon-pause" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+            </svg>
+          </button>
+
+          <!-- Faster multiplier button group on right -->
+          <div class="speed-group faster-group">
+            <span class="speed-label">Time-Lapse</span>
+            <div class="btn-group">
+              <button class="btn-speed active" id="default-speed-btn" data-dir="faster" data-mult="1">1x (Realtime)</button>
+              <button class="btn-speed" data-dir="faster" data-mult="2">x2</button>
+              <button class="btn-speed" data-dir="faster" data-mult="5">x5</button>
+              <button class="btn-speed" data-dir="faster" data-mult="10">x10</button>
+              <button class="btn-speed" data-dir="faster" data-mult="60">x60</button>
+              <button class="btn-speed" data-dir="faster" data-mult="120">x120</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Metrics Output Panel -->
+        <div class="sim-output-panel" id="sim-metrics">
+          <div class="output-metric">
+            <span class="output-metric-label">Estimated Time</span>
+            <span class="output-metric-val" id="metric-time">18.5 minutes</span>
+          </div>
+          <div class="output-metric">
+            <span class="output-metric-label">Energy Expended</span>
+            <span class="output-metric-val" id="metric-energy">High (Human)</span>
+          </div>
+          <div class="output-metric">
+            <span class="output-metric-label">Floor Dignity</span>
+            <span class="output-metric-val" id="metric-dignity">Questionable</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4 — CHOOSE YOUR VARIANT -->
+  <section class="variants-section" id="variants">
+    <span class="section-label text-amber" id="label-variants">Select Your Instrument</span>
+    
+    <div class="variants-grid">
+      <!-- Card 1: Standard -->
+      <div class="variant-card" id="variant-standard">
+        <div>
+          <div class="variant-spec" id="spec-standard">25cm Head Width</div>
+          <img src="file:///C:/Users/fsl/.gemini/antigravity-ide/brain/a4d0f962-4657-431b-ab70-9e80bd7314f5/standard_variant_image_1780062688251.png" alt="Standard Variant" class="variant-image" style="width:100%;height:auto;margin-top:8px;">
+          <div class="variant-label" id="label-std-choice">For Those Who Still Believe In Choice</div>
+          <h3 class="variant-name" id="name-standard">Standard Edition</h3>
+          <p class="variant-description" id="desc-standard-var">
+            A precise, controlled 25 centimeters of pure mopping authority. Fits through doors. Respects your walls.
+          </p>
+        </div>
+        <div>
+          <div class="variant-price" id="price-standard">IDR 5.000.000</div>
+          <button class="btn-variant-select outline" id="btn-select-std" onclick="selectVariant('standard')">Proceed</button>
+        </div>
+      </div>
+
+      <!-- Card 2: Absolute Unit -->
+      <div class="variant-card absolute-unit" id="variant-absolute">
+        <div>
+          <div class="variant-spec" id="spec-absolute">10 Meter Head Width</div>
+          <img src="file:///C:/Users/fsl/.gemini/antigravity-ide/brain/a4d0f962-4657-431b-ab70-9e80bd7314f5/absolute_variant_image_1780062710733.png" alt="Absolute Unit Variant" class="variant-image" style="width:100%;height:auto;margin-top:8px;">
+          <div class="variant-label" id="label-abs-transcended">For Those Who Have Transcended</div>
+          <h3 class="variant-name" id="name-absolute">Absolute Unit Edition</h3>
+          <p class="variant-description" id="desc-absolute-var">
+            Ten meters. No further questions.
+          </p>
+          <div class="variant-danger-badge" id="badge-warning">
+            <span>⚠</span> NOT SUITABLE FOR NORMAL HALLWAYS
+          </div>
+        </div>
+        <div>
+          <div class="variant-price" id="price-absolute">IDR 250.000.000</div>
+          <button class="btn-variant-select filled" id="btn-select-abs" onclick="selectVariant('absolute')">I Am Ready</button>
+        </div>
+      </div>
+    </div>
+
+    <p class="variant-disclaimer" id="disclaimer-safety">
+      * Cleaning Mop 4000 Inc. is not responsible for walls, doors, or relationships damaged during operation of the Absolute Unit Edition.
+    </p>
+  </section>
+
+  <!-- SECTION 5 — ORDER FORM -->
+  <section class="order-section" id="order">
+    <span class="section-label" style="color: var(--color-deep-navy);" id="label-order">Initiate Procurement</span>
+    
+    <div class="order-form-container" id="order-form-box">
+      <form id="mop-procure-form" onsubmit="handleFormSubmit(event)">
+        <!-- Name -->
+        <div class="form-group">
+          <label for="input-name">Full Name</label>
+          <input type="text" id="input-name" placeholder="Your legal floor-owning name" required>
+        </div>
+
+        <!-- Address -->
+        <div class="form-group">
+          <label for="input-address">Delivery Address</label>
+          <input type="text" id="input-address" placeholder="Where should we send the solution" required>
+        </div>
+
+        <!-- Variant Selection (synced with cards) -->
+        <div class="form-group">
+          <label for="select-variant">Variant Selection</label>
+          <select id="select-variant" required>
+            <option value="standard">Standard Edition — IDR 5.000.000</option>
+            <option value="absolute">Absolute Unit Edition — IDR 250.000.000</option>
+          </select>
+        </div>
+
+        <!-- Quantity -->
+        <div class="form-group">
+          <label for="input-quantity">Quantity</label>
+          <input type="number" id="input-quantity" min="1" value="1" required>
+          <small class="form-note">Bulk orders above 50 units qualify for the Enterprise Floor Programme.</small>
+        </div>
+
+        <!-- Mess Severity -->
+        <div class="form-group">
+          <label for="select-severity">Mess Severity</label>
+          <select id="select-severity" required>
+            <option value="mild">Mild</option>
+            <option value="moderate">Moderate</option>
+            <option value="severe">Severe</option>
+            <option value="do-not-ask">Do Not Ask</option>
+          </select>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn-submit-order" id="btn-order-submit">
+          Submit Order To The Floor Gods
+        </button>
+      </form>
+      
+      <p class="order-disclaimer" id="disclaimer-inadequate">
+        By submitting you acknowledge that your floors were inadequately maintained prior to this purchase.
+      </p>
+    </div>
+
+    <!-- Trust Badges -->
+    <div class="trust-badges-row" id="trust-badges">
+      <span class="trust-badge-item">256-BIT FLOOR ENCRYPTION</span>
+      <span class="trust-badge-item">DELIVERED BY HUMANS</span>
+      <span class="trust-badge-item">SATISFACTION MANDATORY</span>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 CLEANING MOP 4000 INC. ALL RIGHTS RESERVED ON ALL TILES. HIGHLY ISO 9001 COMPLIANT.</p>
+  </footer>
+
+  <!-- CEREMONIAL PROCUREMENT RECEIPT MODAL -->
+  <div class="modal-overlay" id="receipt-modal-overlay">
+    <div class="receipt-modal" id="receipt-box">
+      <div class="receipt-header">
+        <div class="receipt-title">MOP-4000-PROCUREMENT</div>
+        <div class="receipt-subtitle">OFFICIAL HIGH-SECURITY RECEIPT</div>
+      </div>
+      
+      <div class="receipt-body">
+        <div class="receipt-row">
+          <span>TX ID:</span>
+          <span id="receipt-tx-id" style="font-weight: bold; color: var(--color-amber);">MOP-9001-A-42</span>
+        </div>
+        <div class="receipt-row">
+          <span>TIMESTAMP:</span>
+          <span id="receipt-time">2026-05-29 19:59 UTC</span>
+        </div>
+        
+        <div class="receipt-divider"></div>
+        
+        <div class="receipt-row">
+          <span>RECIPIENT:</span>
+          <span id="receipt-name">John Doe</span>
+        </div>
+        <div class="receipt-row">
+          <span>DELIVERY:</span>
+          <span id="receipt-address" style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden; max-width: 250px;">123 Street</span>
+        </div>
+        
+        <div class="receipt-divider"></div>
+        
+        <div class="receipt-row">
+          <span>INSTRUMENT:</span>
+          <span id="receipt-variant">Standard Edition</span>
+        </div>
+        <div class="receipt-row">
+          <span>QUANTITY:</span>
+          <span id="receipt-qty">1 unit</span>
+        </div>
+        <div class="receipt-row">
+          <span>MESS THREAT:</span>
+          <span id="receipt-severity" style="text-transform: uppercase;">MILD</span>
+        </div>
+        
+        <div class="receipt-total">
+          <div class="receipt-row">
+            <span>TOTAL DEBT:</span>
+            <span id="receipt-total-price">IDR 5.000.000</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="receipt-footer">
+        <div>THE FLOOR GODS HAVE REGISTERED YOUR REQUEST. PREPARE THE DRAINAGE.</div>
+        <button class="btn-receipt-dismiss" onclick="dismissReceipt()">Acknowledge</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
